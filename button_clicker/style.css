@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.titleBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    height: 60px;
+    padding: 20px;
+}
+.flex{
+    display: flex;
+}
+.navBar{
+    display: flex; 
+    
+}
+.flex-2 { 
+    flex: 2; 
+}
+
+.right { 
+    flex: 1; 
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.left {
+    flex: 1;
+    text-align: center;
+}
+box{
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 30px;
+    border: 2px solid #999;
+   
+}
+.definition {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #2b78e4;
+    color: #fff;
+}
+.like {
+    background-color: #ffd966;
+    
+}
+.add {
+    background-color: #93c47d;
+    width: 75%;
+    margin-top: 20px;
+}
+button-add{
+    background-color: #93c47d;
+  
+    display:block;
+}
+.text {
+    flex: 3;
+    margin-left: 20px;
+    font-size: 0.7rem;
+}
