@@ -1,7 +1,9 @@
-var count = 3;
-var countElement = document.querySelector("#count");
+var count =[9,12,9];
+var countElement =[document.querySelector("#count-1"),
+document.querySelector("#count-2"),
+document.querySelector("#count-3")] ;
 
-function like(){
-    count ++;
-    countElement.innerText = " "+ count  + " Like(s)" ;
+function like(id){
+    count[id] ++;
+    countElement[id].innerHTML = " "+ count[id]  + " Like(s)" ;
 }
