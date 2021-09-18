@@ -1,8 +1,11 @@
 console.log("page loaded...");
 function changeUser(){
-    document.getElementById("userName").innerHTML ="Someone else";
+    userName.innerText ="Someone else";
 
 }
-function hide(el) {
-    el.remove();
-}
+var span = document.querySelector("#move")
+function hide(id) {
+    var element = document.querySelector(id);
+    element.remove();
+    span.innerText--;
+}   
