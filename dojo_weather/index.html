@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="flex-container">
+                <h1 class="nav-title">DojoWeather</h1>
+                <ul class="nav-links">
+                    <li onclick="showMessage()"><a href="#">Burbank</a></li>
+                    <li onclick="showMessage()"><a href="#" >Chicago</a></li>
+                    <li onclick="showMessage()"><a href="#">Dallas</a></li>
+                    <!-- <li><button class="btn">Sign Out</button></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h2>San jose</h2>
+            <form class="temp-container" >
+                show temperature in
+                <select id="tempType">
+                    <option onclick="convert()" value="F">F</option>
+                    <option  onclick="convert()"  value="C">C</option>
+                </select>
+            </form>
+            
+        </div>
+        <hr>
+        <div class="row">
+            <div class="">
+                <h3 class="h3">Today</h3>
+                <img src="assets/some_rain.png" alt="asset" width="90%" height="90%">
+                <p class="text">some rain</p>
+            </div>
+            <div class="">
+                <h3 class="h3">Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="asset" width="90%" height="90%">
+                <p class="text">some sun</p>
+            </div>
+            <div class="">
+                <h3 class="h3">Friday</h3>
+                <img src="assets/some_clouds.png" alt="asset"  width="90%" height="90%">
+                <p class="text">some cloud</p>
+            </div>
+            <div class="">
+                <h3 class="h3">Saturday</h3>
+                <img src="assets/some_sun.png" alt="asset"  width="90%" height="90%">
+                <p class="text">some sun</p>
+            </div>
+
+        </div>
+        <div class="row2">
+            <img src="assets/cookie.png" alt="asset">
+            <div id="cookies" class="col" >
+                <h3 class="h3">Stop! Cookie Time</h3>
+            <p class="text1">We use cookie (sadly not the edible one) to personalize<br> content and ads, 
+                to provide social media feature and to <br> analyse out traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="hide()" class="btn">I accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
