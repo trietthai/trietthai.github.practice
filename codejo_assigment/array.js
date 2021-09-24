@@ -59,6 +59,15 @@ console.log(result); // we expect back 4
 // 4. Array Reverse
 function reverse(arr) {
     // your code here
+    var end =0;
+    var start = arr.length -1;
+    while(end<start){
+        var temp =arr[end];
+        arr[end]=arr[start];
+        arr[start]=temp;
+        end ++;
+        start --;
+    }
     return arr;
 }
 var result = reverse(["a", "b", "c", "d", "e"]);
